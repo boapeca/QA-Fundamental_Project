@@ -1,11 +1,18 @@
 # Fundamental_Project
 
-**Project Documentation:**
+# GameSuggest
 
-* Index
+
+
+* Brief
 * Requirements (Functional, Non-Functional)
 * MoSCoW
-* Kanban Board
+* Architecture
+* Kanban Board - Project Tracking
 * Implementation
+* Risk Assessment
+* Front-End Design
 * Test planning
 * Testing
+* Future Improvements
+
