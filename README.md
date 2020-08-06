@@ -23,11 +23,11 @@ The objective of this application was to make an application that would fall int
 
 ### Requirements
 * Fucntional :
- * Allow the user to create an account
- * Allow the user to save game suggestions
- * Allow the user to delete game suggestions from their list or select as played
+  * Allow the user to create an account
+  * Allow the user to save game suggestions
+  * Allow the user to delete game suggestions from their list or select as played
 * Non - Fucntional:
- * The game suggestion should have pictures or a link to the game being suggested.
+  * The game suggestion should have pictures or a link to the game being suggested.
 ### MoSCoW Prioritisation
 
 ### Architecture
