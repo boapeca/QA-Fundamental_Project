@@ -4,8 +4,8 @@
 
 
 
-* [Brief](###Brief)
-* [Requirements](###Requirements) (Functional, Non-Functional)
+* [Brief](#Brief)
+* [Requirements](#Requirements) (Functional, Non-Functional)
 * MoSCoW
 * Architecture
 * Kanban Board - Project Tracking
