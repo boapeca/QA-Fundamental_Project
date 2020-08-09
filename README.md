@@ -37,9 +37,9 @@ I am also required to include the following:
 To be able to produce a simple but functional Game Suggestion application, it must contain or allow the user to do the following:
 
 * Create a user account that stores:
- * User Name
- * Email
- * Password
+  * User Name
+  * Email
+  * Password
 * Generate Suggestions based on feedback given
 * Save game suggestions on their profile/list
 * Delete saved games
