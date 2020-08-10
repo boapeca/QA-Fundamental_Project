@@ -7,7 +7,7 @@
 * [Brief](#Brief)
   * [Additional Requirements](#Additional_Requirements)
   * [Application Requirements](#Application_Requirements)
-* [MoSCoW Prioritisation](#MoSCoW_Prioritisation)
+* [MoSCoW Prioritisation](#MoSCoW-Prioritisation)
 * Implementation
 * Risk Assessment
 * Front-End Design
