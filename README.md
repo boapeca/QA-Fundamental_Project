@@ -5,11 +5,9 @@
 
 
 * [Brief](#Brief)
-  * [Additional Requirements](#Additional)
-  * [Application Requirements](#Application)
-* [MoSCoW Prioritisation](#MoSCoW)
-* Architecture
-* Kanban Board - Project Tracking
+  * [Additional Requirements](#Additional_Requirements)
+  * [Application Requirements](#Application_Requirements)
+* [MoSCoW Prioritisation](#MoSCoW_Prioritisation)
 * Implementation
 * Risk Assessment
 * Front-End Design
