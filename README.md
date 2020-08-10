@@ -5,8 +5,10 @@
 
 
 * [Brief](#Brief)
-* [Requirements](#Requirements) (Functional, Non-Functional)
-* MoSCoW
+* [Requirements](#Requirements)
+  * [Additional Requirements](#Additional Requirements)
+  * [Application Requirements](#Application Requirements)
+* [MoSCoW Prioritisation](#MoSCoW Prioritisation)
 * Architecture
 * Kanban Board - Project Tracking
 * Implementation
@@ -46,16 +48,14 @@ To be able to produce a simple but functional Game Suggestion application, it mu
 * View and update their account details
 * Delete their account
 
-
-
-### Requirements
-* Fucntional :
-  * Allow the user to create an account
-  * Allow the user to save game suggestions
-  * Allow the user to delete game suggestions from their list or select as played
-* Non - Fucntional:
-  * The game suggestion should have pictures or a link to the game being suggested.
 ### MoSCoW Prioritisation
+
+| Prioritisation     | Specification    |  |
+| ----------- | ----------- |  |
+| Must      | Title       | |
+| Should   | Text        | |
+| Could    |  Text       | |
+| Wont      |    test    | |
 
 ### Architecture
 
