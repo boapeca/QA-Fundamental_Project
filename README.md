@@ -5,8 +5,8 @@
 
 
 * [Brief](#Brief)
-  * [Additional Requirements](#Additional_Requirements)
-  * [Application Requirements](#Application_Requirements)
+  * [Additional Requirements](#Additional-Requirements)
+  * [Application Requirements](#Application-Requirements)
 * [MoSCoW Prioritisation](#MoSCoW-Prioritisation)
 * Implementation
 * Risk Assessment
