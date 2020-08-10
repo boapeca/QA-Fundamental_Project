@@ -5,7 +5,6 @@
 
 
 * [Brief](#Brief)
-* [Requirements](#Requirements)
   * [Additional Requirements](#Additional Requirements)
   * [Application Requirements](#Application Requirements)
 * [MoSCoW Prioritisation](#MoSCoW Prioritisation)
