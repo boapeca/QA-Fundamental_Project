@@ -47,12 +47,12 @@ To be able to produce a simple but functional Game Suggestion application, it mu
 
 ### MoSCoW Prioritisation
 
-| Prioritisation     | Specification    |  |
-| ----------- | ----------- |  |
-| Must      | Title       | |
-| Should   | Text        | |
-| Could    |  Text       | |
-| Wont      |    test    | |
+| Prioritisation     | Specification    |  
+| ----------- | ----------- |  
+| Must      | Title       | 
+| Should   | Text        | 
+| Could    |  Text       |
+| Wont      |    test    | 
 
 ### Architecture
 
