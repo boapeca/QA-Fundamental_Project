@@ -54,7 +54,7 @@ For this project the user has to be able to interact and do certains actions wit
  * As an user I want to be able to able to generate multiple Game Suggestions.(Read)
  * As an user I want to be able to add Game Suggestions on my profile. (Create)
  * As an user I want to be able to delete Game Suggestions on my profile.(Delete)
- * As an user I want to be able to mark Games on my profile as complete. (Update)
+ * As an user I want to be able to edit Games on my profile as complete. (Update)
  * As an user I want to be able to edit my name/password on my profile.
 
 ### MoSCoW Prioritisation
