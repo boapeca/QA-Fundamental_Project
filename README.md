@@ -51,17 +51,18 @@ To be able to produce a simple but functional Game Suggestion application, it mu
 For this project the user has to be able to interact and do certains actions with the web application. The user stories for the current iteration are as follows:
 
  * As an user I want to be able to register in the application to have a my own profile.
- * As an user I want to be able to able to generate multiple Game Suggestions.
- * As an user I want to be able to save Game Suggestions on my profile.
- * As an user I want to be able to delete Game Suggestions on my profile.
- * As an user I want to be able to mark Games on my profile as complete.
+ * As an user I want to be able to able to generate multiple Game Suggestions.(Read)
+ * As an user I want to be able to add Game Suggestions on my profile. (Create)
+ * As an user I want to be able to delete Game Suggestions on my profile.(Delete)
+ * As an user I want to be able to mark Games on my profile as complete. (Update)
  * As an user I want to be able to edit my name/password on my profile.
 
 ### MoSCoW Prioritisation
 
 | Prioritisation     | Specification    |  
 | ----------- | ----------- |  
-| Must      | Title       | 
+| Must      | The application must allow the user
+to create a personal account     | 
 | Should   | Text        | 
 | Could    |  Text       |
 | Wont      |    test    | 
