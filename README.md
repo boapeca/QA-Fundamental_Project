@@ -69,7 +69,6 @@ For this project the user has to be able to interact and do certains actions wit
 | Could    |  The application could allow the user to customize their profile, user icons, folders for their games, etc. |
 | Could | The application could allow users to search for other users profiles|
 | Wont      |  The application won't support multiple platform game suggestion, only PC    |
-| Wont   |  
 
 ### Architecture
 
