@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myStyle{border: thick;}
+        .buttonPos{text-align: right;}
+        .myBox{height: 165px; width: 300px;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
+
+</head>
+<body>
+    <fieldset class="topBanner">
+        <h3> Welcome "X"</h3>
+        <div class="insidePos">
+            <button class="myButton">
+                <a href="index.html">Main Page</a>
+            </button>
+            &nbsp &nbsp &nbsp
+            <button class="myButton">
+                <a href="settings.html">Settings</a>
+            </button>
+        </div>
+        
+    </fieldset>
+    <br>
+    <br>
+    <fieldset class="myBox">
+        <legend><span class = "myStyle"></span> Add a new game</legend>
+        <label for="gameName"> Name:</label>
+        <input type="text" id="gameName" name="game_name">
+        <br>
+        <br>
+        
+        <label for="genre"> Genre:</label>
+        <input type="text" id="genre" name="game_genre">
+        <br>
+        <br>
+        <label>Status:</label>
+            <br>
+            <input type="radio" id="statusNotStarted" value="statusNotStarted" name="status"><label for="statusNotStarted">Not Started</label>
+            &nbsp
+            <input type="radio" id="statusPlaying" value="statusPlaying" name="status"><label for="statusPlaying">Playing</label>
+            &nbsp
+            <input type="radio" id="statusFinished" value="statusFinished" name="status"><label for="statusFinished">Finished</label>
+        <br>
+        <br>
+        <div class="buttonPos">
+            <button type="submit" value="OK">Add Game</button>
+         </div>
+    </fieldset>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myStyle{border: thick;}
+        .buttonPos{text-align: right;}
+        .myBox{height: 150px; width: 250px;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
+</head>
+<body>
+    <fieldset class="topBanner">
+        <h1>Login</h1>
+        <div class="insidePos">
+            <button class="myButton">
+                <a href="index.html">Main Page</a>
+            </button>
+        </div>
+        
+    </fieldset>
+    <br>
+    <br>
+
+    <fieldset class="myBox">
+        <legend><span class = "myStyle"></span> Input your details:</legend>
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="user_name">
+        <br>
+        <br>
+        
+        <label for="password"> Password:</label>
+        <input type="password" id="password" name="user_password">
+        <br>
+        <br>
+        <div class="buttonPos">
+            <button type="submit" value="OK">Sign Up</button>
+            <button type="reset" value="Reset">Reset Fields</button>
+        </div>
+    </fieldset>
+</body>
+</html>

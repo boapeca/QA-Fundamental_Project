@@ -1,0 +1,35 @@
+
+
+h1{
+        text-align: center;
+        color: white;
+}
+h3{
+        text-align: center;
+        color: white;
+}
+
+
+.topBanner{
+        background-color: rgb(68, 66, 66);
+        height: 100px;
+}
+
+.insidePos{
+        text-align: left;
+        color: white;
+}
+
+
+.myButton{
+        background-color: rgb(68, 66, 66);
+        height: 25px;      
+}
+.myButton:hover{
+        background-color: black;
+}
+
+a{
+        text-decoration: none;
+        color:white;
+}
