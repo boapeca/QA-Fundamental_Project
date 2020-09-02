@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.persistence.EntityNotFoundException;
 
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The USER with this id does not exit")
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The Game with this id does not exit")
 public class GameNotFoundException extends EntityNotFoundException {
 }
