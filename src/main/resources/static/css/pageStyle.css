@@ -19,6 +19,12 @@ h3{
         text-align: left;
         color: white;
 }
+.myContainer {
+        width: 300px;
+        background-color: #ffcc33;
+        margin: auto;
+}
+
 
 
 .myButton{
