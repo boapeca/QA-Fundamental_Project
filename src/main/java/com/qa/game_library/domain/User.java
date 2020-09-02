@@ -1,12 +1,14 @@
 package com.qa.game_library.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "libraries"})
 public class User {
 
 
@@ -26,6 +28,11 @@ public class User {
     @Column(nullable = false)
     private Date dateOfBirth;
 
+
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+    private List<Library> libraries = new ArrayList<>();
+
     public User() {
     }
 
@@ -34,7 +41,17 @@ public class User {
         this.password = password;
         this.email = email;
         this.dateOfBirth = dateOfBirth;
+
     }
+
+    public List<Library> getLibraries() {
+        return libraries;
+    }
+
+    public void setLibraries(List<Library> libraries) {
+        this.libraries = libraries;
+    }
+
 
     public Long getId() {
         return id;

@@ -7,8 +7,9 @@
     <style>
         .myStyle{border: thick;}
         .buttonPos{text-align: right;}
-        .myBox{height: 250px; width: 300px;}
+        .myBox{height: 215px; width: 300px;}
     </style>
+    <script src="../js/signUp.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
 </head>
 <body>
@@ -23,34 +24,35 @@
     </fieldset>
     <br>
     <br>
-    <fieldset class="myBox">
-        <legend><span class = "myStyle"></span> Input your details:</legend>
-        <label for="username"> Username:</label>
-        <input type="text" id="username" name="user_name">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        &nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="email" id="email" name="user_email">
-        <br>
-        <br>
-        <label for="password"> Password:</label>
-        
-        <input type="password" id="password" name="user_password">
-        <br>
-        <br>
-        <label>DoB:</label>
-        <<input type="date" id="birthday" name="user_birthday">
-        <br>
-        <br>
-        <label>Gender:</label>
-        <br>
-        <input type="radio" id="m_gender" value="m_gender" name="gender"><label for="m_gender">Male</label><br>
-        <input type="radio" id="f_gender" value="f_gender" name="gender"><label for="f_gender">Female</label>
-        <div class="buttonPos">
-            <button type="submit" value="OK">Sign Up</button>
-            <button type="reset" value="Reset">Reset Fields</button>
-        </div>
-    </fieldset>
+    <form id="signUpForm">
+        <fieldset class="myBox">
+            <legend><span class = "myStyle"></span> Input your details:</legend>
+            <label for="username"> Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <br>
+            <label for="password"> Password:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <label for="dateOfBirth">DoB:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+            <br>
+            <br>
+<!--            <label for ="">Gender:</label>-->
+<!--            <br>-->
+<!--            <input type="radio" id="m_gender" value="Male" name="gender"><label for="m_gender">Male</label><br>-->
+<!--            <input type="radio" id="f_gender" value="Female" name="gender"><label for="f_gender">Female</label>-->
+            <div class="buttonPos">
+                <button type="submit" onclick="submitUser()" value="submit">Sign Up</button>
+                <button type="reset" value="Reset">Reset Fields</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>

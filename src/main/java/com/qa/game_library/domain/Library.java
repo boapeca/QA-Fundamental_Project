@@ -20,7 +20,18 @@ public class Library {
     @OneToMany(mappedBy = "library", fetch = FetchType.EAGER)
     private List<Game> games = new ArrayList<>();
 
+    @ManyToOne(targetEntity = User.class)
+    private User user;
+
     public Library() {
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public List<Game> getGames() {

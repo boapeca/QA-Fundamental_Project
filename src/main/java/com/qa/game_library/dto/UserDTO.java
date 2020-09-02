@@ -1,6 +1,10 @@
 package com.qa.game_library.dto;
 
+import com.qa.game_library.domain.Library;
+
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class UserDTO {
 
@@ -10,6 +14,8 @@ public class UserDTO {
     private String email;
     private Date dateOfBirth;
 
+    private List<LibraryDTO> libraries = new ArrayList<>();
+
     public UserDTO() {
     }
 
@@ -18,6 +24,15 @@ public class UserDTO {
         this.password = password;
         this.email = email;
         this.dateOfBirth = dateOfBirth;
+
+    }
+
+    public List<LibraryDTO> getLibraries() {
+        return libraries;
+    }
+
+    public void setLibraries(List<LibraryDTO> libraries) {
+        this.libraries = libraries;
     }
 
     public Long getId() {
