@@ -44,7 +44,7 @@ public class LibraryService {
     public LibraryDTO updateLibrary(Long id, Library library){
         Library update = this.libraryRepository.findById(id).orElseThrow(LibraryNotFoundException::new);
         update.setName(library.getName());
-        return this.mapToDTO(this.libraryRepository.save(library));
+        return this.mapToDTO(this.libraryRepository.save(update));
     }
 
 

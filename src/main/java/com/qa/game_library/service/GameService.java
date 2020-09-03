@@ -46,7 +46,7 @@ public class GameService {
         update.setName(game.getName());
         update.setGenre(game.getGenre());
 
-        return this.mapToDTO(this.gameRepository.save(game));
+        return this.mapToDTO(this.gameRepository.save(update));
     }
 
     public boolean deleteGame(Long id){

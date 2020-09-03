@@ -46,7 +46,7 @@ public class UserService {
         User update = this.repo.findById(id).orElseThrow(UserNotFoundException::new);
         update.setPassword(user.getPassword());
 
-        return this.mapToDTO(this.repo.save(user));
+        return this.mapToDTO(this.repo.save(update));
     }
 
     public boolean deleteUser(Long id){
