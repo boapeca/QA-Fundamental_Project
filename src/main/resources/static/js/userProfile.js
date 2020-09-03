@@ -42,41 +42,6 @@ function submitGame(){
 
 
 
-// function getGameEditForm(){
-//
-//     // create a form to edit game
-//     let form = document.createElement("form");
-//     form.setAttribute("method", "post");
-//     form.setAttribute("action", "submit.php");
-//     form.setAttribute('elementId',"newForm");
-//
-//     // edit game name
-//     let gameName = document.createElement("input");
-//     gameName.setAttribute("type", "text");
-//     gameName.setAttribute("name", "name");
-//     gameName.setAttribute("placeholder", "Game Name");
-//
-//     // edit genre
-//     let genre = document.createElement("input");
-//     genre.setAttribute("type", "text");
-//     genre.setAttribute("genre", "genre");
-//     genre.setAttribute("placeholder", "Game Genre");
-//
-//     //which game
-//     let gameID = document.createElement("input");
-//     gameID.setAttribute("type", "text");
-//     gameID.setAttribute("id", "id");
-//     gameID.setAttribute("placeholder", "Game ID");
-//
-//     // create a submit button
-//     let s = document.createElement("input");
-//     s.setAttribute("type", "submit");
-//     s.setAttribute("value", "Submit");
-//     s.addEventListener('click', function (){
-//         editGame()
-//     });
-//
-// }
 
 function displayLibraries() {
     const req = new XMLHttpRequest();

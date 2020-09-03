@@ -17,7 +17,7 @@ public class Library {
     @Column(nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "library", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "library", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     private List<Game> games = new ArrayList<>();
 
     @ManyToOne(targetEntity = User.class)
