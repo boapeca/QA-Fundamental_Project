@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../js/login.js"></script>
     <style>
         .myStyle{border: thick;}
         .buttonPos{text-align: right;}
@@ -11,6 +12,7 @@
     </style>
     <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
 </head>
+
 <body>
     <fieldset class="topBanner">
         <h1>Login</h1>
@@ -23,22 +25,23 @@
     </fieldset>
     <br>
     <br>
+    <form id="loginVerify">
+        <fieldset class="myBox">
+            <legend><span class = "myStyle"></span> Input your details:</legend>
+            <label for="username"> Username:</label>
+            <input type="text" id="username" name="user_name">
+            <br>
+            <br>
 
-    <fieldset class="myBox">
-        <legend><span class = "myStyle"></span> Input your details:</legend>
-        <label for="username"> Username:</label>
-        <input type="text" id="username" name="user_name">
-        <br>
-        <br>
-        
-        <label for="password"> Password:</label>
-        <input type="password" id="password" name="user_password">
-        <br>
-        <br>
-        <div class="buttonPos">
-            <button type="submit" value="OK">Sign Up</button>
-            <button type="reset" value="Reset">Reset Fields</button>
-        </div>
-    </fieldset>
+            <label for="password"> Password:</label>
+            <input type="password" id="password" name="user_password">
+            <br>
+            <br>
+            <div class="buttonPos">
+                <button type="submit" onclick="checkLogin()" value="submit">Login</button>
+                <button type="reset" value="Reset">Reset Fields</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>

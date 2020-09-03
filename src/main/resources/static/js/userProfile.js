@@ -75,7 +75,7 @@ function displayLibraries() {
                         newElem.getElementsByClassName('myBoxLeft');
                         let name = document.createElement('p');
                         let genre = document.createElement('p');
-                        let gameID = document.createElement('p')
+                        let gameID = document.createElement('p');
                         name.textContent = "Name: " + game.name;
                         genre.textContent = "Genre: " + game.genre;
                         gameID.textContent = "Game ID: " + game.id;
