@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .myStyle{border: thick;}
+        .buttonPos{text-align: right;}
+        .myBoxLeft{height: 180px; width: 150px; display: inline-block}
+        .myBoxMid{height: 250px; width: 150px; display: inline-block}
+    </style>
+    <script src="../js/editGameNLibrary.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
+
+</head>
+<body>
+
+<fieldset class="topBanner">
+    <h3> Edit Page</h3>
+    <div class="insidePos">
+        <button class="myButton">
+            <a href="userProfile.html">User Profile</a>
+        </button>
+        &nbsp &nbsp &nbsp
+        <button class="myButton">
+            <a href="settings.html">Settings</a>
+        </button>
+    </div>
+</fieldset>
+<br>
+<br>
+<form id="editLibrary">
+    <fieldset class="myBoxLeft">
+        <legend><span class = "myStyle"></span> Edit Library</legend>
+
+        <label for="myLibraryId"> Library ID:</label>
+        <input type="text" id="myLibraryId" name="myLibraryId">
+
+        <label for="name"> Name:</label>
+        <input type="text" id="LibraryName" name="libraryName">
+
+        <br>
+        <label for="userId"> UserID:</label>
+        <input type="text" id="userId" name="userId">
+        <br>
+
+        <div class="buttonPos">
+            <button type="submit" onclick="editLibrary()" value="submit">Edit </button>
+            &nbsp &nbsp
+            <button type="submit" onclick="deleteLibrary()" value="submit">Delete </button>
+        </div>
+
+    </fieldset>
+</form>
+<br>
+<br>
+<form id="editGame">
+    <fieldset class="myBoxMid">
+        <legend><span class = "myStyle"></span> Edit game</legend>
+        <label for="myGameId"> Game ID:</label>
+        <input type="text" id="myGameId" name="myGameId">
+        <br>
+        <br>
+        <label for="gameName"> Name:</label>
+        <input type="text" id="gameName" name="gameName">
+        <br>
+        <br>
+        <label for="gameGenre"> Genre:</label>
+        <input type="text" id="gameGenre" name="gameGenre">
+        <br>
+        <br>
+        <label for="libraryID"> Library ID:</label>
+        <input type="text" id="libraryID" name="libraryID">
+        <br>
+
+        <div class="buttonPos">
+            <button type="submit" onclick="editGame()" value="submit">Edit </button>
+            &nbsp &nbsp
+            <button type="submit" onclick="deleteGame()" value="submit">Delete </button>
+        </div>
+
+    </fieldset>
+</form>
+
+</body>
+</html>
