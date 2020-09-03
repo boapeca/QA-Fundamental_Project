@@ -8,13 +8,13 @@
         .myStyle{border: thick;}
         .buttonPos{text-align: right;}
         .myBoxLeft{height: 120px; width: 150px; display: inline-block}
-        .myBoxMid{height: 165px; width: 150px; display: inline-block}
+        .myBoxMid{height: 185px; width: 150px; display: inline-block}
     </style>
-    <script src="../js/createLibrary.js"></script>
+    <script src="../js/userProfile.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
 
 </head>
-<body>
+<body onload="displayLibraries()">
 
     <fieldset class="topBanner">
         <h3> Welcome "X"</h3>
@@ -24,8 +24,13 @@
             </button>
             &nbsp &nbsp &nbsp
             <button class="myButton">
+                <a href="editGameNLibrary.html">Edit</a>
+            </button>
+            &nbsp &nbsp &nbsp
+            <button class="myButton">
                 <a href="settings.html">Settings</a>
             </button>
+
         </div>
     </fieldset>
     <br>
@@ -39,6 +44,8 @@
                 <br>
                 <label for="userId"> UserID:</label>
                 <input type="text" id="userId" name="userId">
+                <br>
+
                 <div class="buttonPos">
                     <button type="submit" onclick="submitLibrary()" value="submit">Add Library</button>
                 </div>
@@ -50,16 +57,19 @@
             <fieldset class="myBoxMid">
                 <legend><span class = "myStyle"></span> Add a new game</legend>
                 <label for="gameName"> Name:</label>
-                <input type="text" id="gameName" name="game_name">
+                <input type="text" id="gameName" name="gameName">
                 <br>
+                <br>
+                <label for="genre"> Genre:</label>
+                <input type="text" id="genre" name="gameGenre">
+                <br>
+                <br>
+                <label for="libraryID"> Library ID:</label>
+                <input type="text" id="libraryID" name="libraryID">
                 <br>
 
-                <label for="genre"> Genre:</label>
-                <input type="text" id="genre" name="game_genre">
-                <br>
-                <br>
                 <div class="buttonPos">
-                    <button type="submit" value="OK">Add Game</button>
+                    <button type="submit" onclick="submitGame()" value="submit">Add Game</button>
                 </div>
             </fieldset>
         </form>
