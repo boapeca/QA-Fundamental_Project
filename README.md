@@ -81,8 +81,15 @@ Screenshots of the same document can be seen bellow:
 ### Implementation
 
 ### Database Structure
+The following picture is an Entity Relationship (ERD) and it shows the relationship between the different tables on this application.
+
 ![Database Structure v1](https://github.com/psilva12/Fundamental_Project/blob/master/ERD%20v1.png)
 
+As it can be observerd in the ERD, there is a one to many relationship between the user and the library, as an user can have multiple Libraries under their profile. Likewise, library has a one to many relationship with the games table and a single library can have multiple games.
+
+### CI Pipeline
+
+![CI Pipeline]()
 
 ### Front-End
 
