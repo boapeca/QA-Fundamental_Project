@@ -14,10 +14,8 @@ jobs:
  
       - run: mvn package 
       
-      - run:
-          name: Install Spring boot
-          command: sdk install -y springboot
-          
+      -run: java package
+      -run: springboot package
       
       - run:
           name: Clone Repo & Install Application Dependencies
