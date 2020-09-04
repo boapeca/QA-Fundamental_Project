@@ -9,9 +9,11 @@ jobs:
     machine:
       enabled: true
     steps:
-       working_directory: ~/game_library
+       working_directory: ~/Fundamental_Project
        docker: 	      
           - image: circleci/openjdk:8-jdk-stretch
+       - restore_cache: 
+            key: Fundamental_Project-{{ checksum "pom.xml" }}
        - run: mvn dependency:go-offline # gets the project dependencies
  
        - run: mvn package 
