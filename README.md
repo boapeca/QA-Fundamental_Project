@@ -95,7 +95,8 @@ I used Jira to keep track of tasks and issues that needed to be addressed in ord
 
 ![Jira BackLog](https://github.com/psilva12/Fundamental_Project/blob/master/Jira%20BackLog.png)
 
-
+The board was design with 3 fields for each Sprint. In the case for this application it was one sprint for the first iteration of the application, the 3 fields are To Do which represents the tasks still to do from that sprint. In Progress which is the issue being currently tackled and finally Done which are all the issues currently completed on the Sprint.
+As it can be obversed the vast majority of issues for this Spring have been successfully completed, the other will carry on to the next Sprint which will take care of the next iteration of the application.
 
 
 ### Risk Assessment
