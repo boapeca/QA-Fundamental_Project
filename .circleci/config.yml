@@ -1,29 +1,38 @@
-version: 2 
-jobs: 
-  build: 
-    
-    working_directory: ~/game_library 
-
-    docker: 
-      - image: circleci/openjdk:8-jdk-stretch 
-    
-    steps: 
-
-      - checkout # check out source code to working directory
-
-      - restore_cache: 
-          key: game_library-{{ checksum "pom.xml" }}
-          
-      - run: mvn dependency:go-offline # gets the project dependencies
-     
-      
+version: 2.1
+jobs:
+  test:
+    machine:
+      enabled: true
+    steps:
+      - run: echo "Tests can run here!"
+  deploy:
+    machine:
+      enabled: true
+    steps:
+       - run: mvn dependency:go-offline # gets the project dependencies
+ 
       - run: mvn package 
-     
-     
+      
       - run:
-          name: Clone Repo 
-          command: ssh -o StrictHostKeyChecking=no qa@publicip "git clone https://github.com/psilva12/Fundamental_Project.git"
+          name: Install Java
+          command: sudo apt-get install -y openjdk-8-jdk
+      - run:
+          name: Install Spring boot
+          command: sdk install -y springboot
+          
+      
+      - run:
+          name: Clone Repo & Install Application Dependencies
+          command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/psilva12/Fundamental_Project && npm install"
       - run:
           name: Deploy Application
-          command: ssh -o StrictHostKeyChecking=no qa@publicip "cd ~/game_library && npm run serve"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn run serve"
+workflows:
+  version: 2.1
+  test-and-deploy:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
 
