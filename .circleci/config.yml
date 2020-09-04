@@ -14,8 +14,9 @@ jobs:
  
       - run: mvn package 
       
-      -run: java package
-      -run: springboot package
+      - run:
+          name: Install Java
+          command: sudo apt-get install openjdk-8-jdk
       
       - run:
           name: Clone Repo & Install Application Dependencies
