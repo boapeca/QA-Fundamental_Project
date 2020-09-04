@@ -81,7 +81,7 @@ Screenshots of the same document can be seen bellow:
 ### Implementation
 
 ### Database Structure
-![Risk Assessment pic1]()
+![Database Structure v1](https://github.com/psilva12/Fundamental_Project/blob/master/ERD%20v1.png)
 
 
 ### Front-End
