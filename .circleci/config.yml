@@ -14,7 +14,6 @@ jobs:
       - restore_cache: 
           key: game_library-{{ checksum "pom.xml" }}
           
-     steps:
       - run: mvn dependency:go-offline # gets the project dependencies
      
       
