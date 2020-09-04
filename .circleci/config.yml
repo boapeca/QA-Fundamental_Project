@@ -1,19 +1,19 @@
-version: 2.1
-jobs:
-  test:
-    machine:
-      enabled: true
-    steps:
-      - run: echo "Tests can run here!"
-  deploy:
-    machine:
-      enabled: true
-    steps:
-       working_directory: ~/Fundamental_Project
-       docker:
-          - image: circleci/openjdk:8-jdk-stretch
-       - restore_cache: 
-            key: Fundamental_Project-{{ checksum "pom.xml" }}
+jobs: 
+  build: 
+    
+    working_directory: ~/Fundamental_Project
+    docker: 
+      - image: circleci/openjdk:8-jdk-stretch 
+    
+    steps: 
+      - checkout # check out source code to working directory
+      - restore_cache: 
+          key: Fundamental_Project-{{ checksum "pom.xml" }}
+          
+      - run: mvn dependency:go-offline # gets the project dependencies
+     
+      
+      - run: mvn package 
        - run: mvn dependency:go-offline # gets the project dependencies
  
        - run: mvn package 
@@ -32,12 +32,4 @@ jobs:
        - run:
            name: Deploy Application
            command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn run serve"
-workflows:
-  version: 2.1
-  test-and-deploy:
-    jobs:
-      - test
-      - deploy:
-          requires:
-            - test
 
