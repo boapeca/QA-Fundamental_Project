@@ -13,7 +13,10 @@ jobs:
 
       - restore_cache: 
           key: game_library-{{ checksum "pom.xml" }}
-      
+     deploy:
+      machine:
+        enabled: true
+     steps:
       - run: mvn dependency:go-offline # gets the project dependencies
      
       
@@ -25,5 +28,5 @@ jobs:
           command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/game_library && npm run build"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/game_library && npm run serve"
 
