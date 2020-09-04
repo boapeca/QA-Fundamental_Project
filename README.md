@@ -109,6 +109,19 @@ Screenshots of the same document can be seen bellow:
 ![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
 ### Front-End
+The Front End pages at this moment are styled to a certain degree, the front end was build mainly in HTML. However the application is stable and functional.
+
+As the user naviates for the first time to the application is it required to create an account
+![Sign Up](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/SignUp%20Page.png)
+
+This is the main page for the application where the user can add games and libraries to their profile
+![User Page](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/User%20Profile.png)
+
+Example:
+![User Library](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/library%20example.png)
+
+And finally the edit page where the user can edit and delete games or library as he/she wishes no longer to have them or correct any errors on creation.
+![Edit Page](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/editPage.png)
 
 
 ### Future Improvements
