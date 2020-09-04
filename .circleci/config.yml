@@ -18,10 +18,7 @@ jobs:
      
       
       - run: mvn package 
-      
-      -run:
-          name: Test Key
-          command: ssh-keyscan <host>
+     
      
       - run:
           name: Clone Repo 
