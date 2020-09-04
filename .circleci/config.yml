@@ -21,7 +21,7 @@ jobs:
      
       - run:
           name: Clone Repo 
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@publicip "git clone https://github.com/psilva12/Fundamental_Project.git" -y
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@publicip "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@publicip "cd ~/game_library && npm run serve"
