@@ -80,6 +80,8 @@ Screenshots of the same document can be seen bellow:
 
 ### Implementation
 
+### Database Structure
+![Risk Assessment pic1]()
 
 
 ### Front-End
