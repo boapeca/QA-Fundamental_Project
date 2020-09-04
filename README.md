@@ -74,6 +74,7 @@ For this project the user has to be able to interact and do certains actions wit
 Risk assessment can be found here: [Google Docs](https://docs.google.com/document/d/1W9KHjCci3DqWZmPc7FcpdVsgnVJplajcUnwxI6uf4u8/edit?usp=sharing)
 
 Screenshots of the same document can be seen bellow:
+
 ![Risk-Assessment](https://imgur.com/a/bpI3bfg)
 
 ### Implementation
