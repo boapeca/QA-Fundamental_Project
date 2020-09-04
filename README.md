@@ -75,7 +75,7 @@ Risk assessment can be found here: [Google Docs](https://docs.google.com/documen
 
 Screenshots of the same document can be seen bellow:
 
-![Risk-Assessment](https://imgur.com/a/bpI3bfg)
+![Risk-Assessment](risk 1.png)
 
 ### Implementation
 
