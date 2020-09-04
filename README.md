@@ -90,6 +90,11 @@ After the report is complete and no errors have been found CircleCi will push th
 
 I used Jira to keep track of tasks and issues that needed to be addressed in order to complete the application, the jira board can be found here: [Jira Board](https://psos11.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=FP&selectedIssue=FP-28)
 
+![Jira Board Sprint1](https://github.com/psilva12/Fundamental_Project/blob/master/Jira%20Board.png)
+
+
+![Jira BackLog](https://github.com/psilva12/Fundamental_Project/blob/master/Jira%20BackLog.png)
+
 
 
 
