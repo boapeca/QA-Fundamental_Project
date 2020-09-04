@@ -10,9 +10,9 @@
 * [User Stories](#User-Stories)
 * [MoSCoW Prioritisation](#MoSCoW-Prioritisation)
 * [Risk Assessment](#Risk-Assessment)
-* Implementation
-* Front-End
-* Future Improvements
+* [Implementation](#Implementation)
+* [Front-End](#Front-End)
+* [Future Improvements](#Future-Improvements)
 
 ### Brief
 
@@ -80,6 +80,8 @@ Screenshots of the same document can be seen bellow:
 ![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
 ### Implementation
+
+
 
 ### Front-End
 
