@@ -34,15 +34,15 @@ I am also required to include the following:
 
 ### Application Requirements
 
-To be able to produce a simple but functional Game Suggestion application, it must contain or allow the user to do the following:
+To be able to produce a simple but functional Game Library application, it must contain or allow the user to do the following:
 
 * Create a user account that stores:
   * User Name
   * Email
   * Password
-* Generate Suggestions based on feedback given
-* Save game suggestions on their profile/list
-* Delete saved games
+* Allow the user to create libraries and games
+* Edit games and libraries
+* Delete any unwanted games or libraries
 * View and update their account details
 * Delete their account
 
@@ -54,7 +54,7 @@ For this project the user has to be able to interact and do certains actions wit
  * As an user I want to be able to able to see my Game Library. (Read)
  * As an user I want to be able to add Games to my Library. (Create)
  * As an user I want to be able to delete Games from my Library.(Delete)
- * As an user I want to be able to edit Games on my library as complete. (Update)
+ * As an user I want to be able to edit Games on my library. (Update)
  * As an user I want to be able to edit my name/password on my profile.
 
 ### MoSCoW Prioritisation
@@ -64,15 +64,18 @@ For this project the user has to be able to interact and do certains actions wit
 | Prioritisation     | Specification    |  
 | ----------- | ----------- |  
 | Must      | The application must allow the user to create a personal account |
-| Must   | The application must allow the user to generate multiple Game Suggestions|
+| Must   | The application must allow the user to add multiple Libraries|
 | Must   | The application must allow the user to add and delete games from their profile|
 | Should   | The application should allow the user to edit their profile| 
 | Should  | The application should allow the user to add their own "games list to play" to their profile |
 | Could    |  The application could allow the user to customize their profile, user icons, folders for their games, etc. |
-| Could | The application could allow users to search for other users profiles|
-| Wont      |  The application won't support multiple platform game suggestion, only PC    |
+| Wont | The application could allow users to search for other users profiles|
+
 
 ### Risk Assessment
+Risk assessment can be found here: [Google Docs] [docs-link]
+[docs-link]: https://docs.google.com/document/d/1W9KHjCci3DqWZmPc7FcpdVsgnVJplajcUnwxI6uf4u8/edit
+Screenshots of the same document can be seen bellow:
 
 
 
