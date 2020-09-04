@@ -75,7 +75,8 @@ Risk assessment can be found here: [Google Docs](https://docs.google.com/documen
 
 Screenshots of the same document can be seen bellow:
 
-![Risk Assessment pic1](risk 1.png)
+![Risk Assessment pic1](https://github.com/psilva12/Fundamental_Project/blob/master/risk%201.png)
+
 ![Risk Assessment pic2](risk 2.png)
 
 ### Implementation
