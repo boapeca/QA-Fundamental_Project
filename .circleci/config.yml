@@ -21,7 +21,7 @@ jobs:
       
       -run:
           name: Test Key
-          command: ssh-keyscan $SSH_HOST
+          command: ssh-keyscan <host>
      
       - run:
           name: Clone Repo 
