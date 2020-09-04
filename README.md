@@ -77,7 +77,7 @@ Screenshots of the same document can be seen bellow:
 
 ![Risk Assessment pic1](https://github.com/psilva12/Fundamental_Project/blob/master/risk%201.png)
 
-![Risk Assessment pic2](risk 2.png)
+![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
 ### Implementation
 
