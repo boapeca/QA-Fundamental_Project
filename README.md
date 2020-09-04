@@ -53,7 +53,6 @@ For this project the user has to be able to interact and do certains actions wit
  * As an user I want to be able to add Games to my Library. (Create)
  * As an user I want to be able to delete Games from my Library.(Delete)
  * As an user I want to be able to edit Games on my library. (Update)
- * As an user I want to be able to edit my name/password on my profile.
 
 ### MoSCoW Prioritisation
 
