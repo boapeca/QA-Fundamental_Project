@@ -4,9 +4,6 @@ jobs:
     
     working_directory: ~/game_library 
 
-    docker: 
-      - image: circleci/openjdk:8-jdk-stretch 
-
     steps: 
 
       - checkout # check out source code to working directory
@@ -18,11 +15,14 @@ jobs:
      
       
       - run: mvn package 
+      - run:
+         name: Avoid hosts unknown for github
+        command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
      
       - run:
           name: Clone Repo 
-          command: ssh $SSH_USER@$SSH_HOST ssh -o StrictHostKeyChecking=no palinhesosilva@publicip "git clone https://github.com/psilva12/Fundamental_Project.git"
+          command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST ssh -o StrictHostKeyChecking=no palinhesosilva@publicip "cd ~/game_library && npm run serve"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/game_library && npm run serve"
 
