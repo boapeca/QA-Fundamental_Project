@@ -11,6 +11,7 @@
 * [MoSCoW Prioritisation](#MoSCoW-Prioritisation)
 * [Risk Assessment](#Risk-Assessment)
 * Implementation
+* Front-End
 * Future Improvements
 
 ### Brief
@@ -75,6 +76,8 @@ Risk assessment can be found here: [Google Docs](https://docs.google.com/documen
 Screenshots of the same document can be seen bellow:
 
 ### Implementation
+
+### Front-End
 
 
 ### Future Improvements
