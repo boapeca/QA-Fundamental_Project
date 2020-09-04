@@ -10,7 +10,7 @@ jobs:
       enabled: true
     steps:
        working_directory: ~/Fundamental_Project
-       docker: 	      
+       docker:
           - image: circleci/openjdk:8-jdk-stretch
        - restore_cache: 
             key: Fundamental_Project-{{ checksum "pom.xml" }}
