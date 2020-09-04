@@ -9,8 +9,8 @@
   * [Application Requirements](#Application-Requirements)
 * [User Stories](#User-Stories)
 * [MoSCoW Prioritisation](#MoSCoW-Prioritisation)
-* [Risk Assessment](#Risk-Assessment)
 * [Implementation](#Implementation)
+* [Risk Assessment](#Risk-Assessment)
 * [Front-End](#Front-End)
 * [Future Improvements](#Future-Improvements)
 
@@ -69,14 +69,6 @@ For this project the user has to be able to interact and do certains actions wit
 | Wont | The application could allow users to search for other users profiles|
 
 
-### Risk Assessment
-Risk assessment can be found here: [Google Docs](https://docs.google.com/document/d/1W9KHjCci3DqWZmPc7FcpdVsgnVJplajcUnwxI6uf4u8/edit?usp=sharing)
-
-Screenshots of the same document can be seen bellow:
-
-![Risk Assessment pic1](https://github.com/psilva12/Fundamental_Project/blob/master/risk%201.png)
-
-![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
 ### Implementation
 
@@ -89,7 +81,26 @@ As it can be observerd in the ERD, there is a one to many relationship between t
 
 ### CI Pipeline
 
-![CI Pipeline]()
+![CI Pipeline](https://github.com/psilva12/Fundamental_Project/blob/master/CI%20Pipeline.png)
+
+The CI Pipeline in the picture above is the continuous integration pipelines and all frameworks and sercives that played a part in building this application. The current pipeline allows for fast, simple and efficient integration in the application, as a developer I can produce new features or fix current ones and push my solution to GitHub, which will then trigger CircleCi that will check that code and produce an error reports. 
+After the report is complete and no errors have been found CircleCi will push the new code live to the cloud VM, in this case we are using Google Cloud Platform(GCP).
+
+### Project Tracking
+
+I used Jira to keep track of tasks and issues that needed to be addressed in order to complete the application, the jira board can be found here: [Jira Board](https://psos11.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=FP&selectedIssue=FP-28)
+
+
+
+
+### Risk Assessment
+Risk assessment can be found here: [Google Docs](https://docs.google.com/document/d/1W9KHjCci3DqWZmPc7FcpdVsgnVJplajcUnwxI6uf4u8/edit?usp=sharing)
+
+Screenshots of the same document can be seen bellow:
+
+![Risk Assessment pic1](https://github.com/psilva12/Fundamental_Project/blob/master/risk%201.png)
+
+![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
 ### Front-End
 
