@@ -63,9 +63,8 @@ For this project the user has to be able to interact and do certains actions wit
 | ----------- | ----------- |  
 | Must      | The application must allow the user to create a personal account |
 | Must   | The application must allow the user to add multiple Libraries|
-| Must   | The application must allow the user to add and delete games from their profile|
+| Must   | The application must allow the user to add, edit and delete games from their profile|
 | Should   | The application should allow the user to edit their profile| 
-| Should  | The application should allow the user to add their own "games list to play" to their profile |
 | Could    |  The application could allow the user to customize their profile, user icons, folders for their games, etc. |
 | Wont | The application could allow users to search for other users profiles|
 
