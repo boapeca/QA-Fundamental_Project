@@ -15,9 +15,6 @@ jobs:
       - run: mvn package 
       
       - run:
-          name: Install Java
-          command: sudo apt-get install -y openjdk-8-jdk
-      - run:
           name: Install Spring boot
           command: sdk install -y springboot
           
