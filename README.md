@@ -25,7 +25,7 @@ I am also required to include the following:
 * Kanban Board : Jira
 * Documentation on the project
 * A java based functional application
-* Testing
+* <del> Testing
 * Version Control System : Github
 * CI server and GCP
 
