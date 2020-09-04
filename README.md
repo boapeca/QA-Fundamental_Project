@@ -121,8 +121,15 @@ Example:
 ![User Library](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/library%20example.png)
 
 And finally the edit page where the user can edit and delete games or library as he/she wishes no longer to have them or correct any errors on creation.
+
 ![Edit Page](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/editPage.png)
 
 
 ### Future Improvements
+
+There are a few Future Improvement I would like to implement for this application:
+* Fix the Login to allow multiple users to use the application simultaneously
+* Allow the users to manage their profile more freely, allowing them to follow other users and see their game libraries.
+* Fix and improve the UI
+* Add a Game Suggestion feature where it would generate games for the user to choose to add on their libraries.
 
