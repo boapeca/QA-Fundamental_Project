@@ -20,7 +20,7 @@ jobs:
       
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn dependency:go-offline && mvn install "
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn install "
           
           
           
