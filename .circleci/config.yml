@@ -1,0 +1,27 @@
+jobs: 
+  build: 
+    
+    working_directory: ~/Fundamental_Project
+    docker: 
+      - image: circleci/openjdk:8-jdk-stretch 
+    
+    steps: 
+      - checkout # check out source code to working directory
+      - restore_cache: 
+          key: Fundamental_Project-{{ checksum "pom.xml" }}
+     
+      
+      - run:
+          name: Install install java and spring
+          command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
+      - run:
+          name: Clone Repo & Install Maven
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install -y maven"
+      
+      - run:
+          name: Deploy Application
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn install "
+          
+          
+      
+         
