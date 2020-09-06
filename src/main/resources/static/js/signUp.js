@@ -7,7 +7,7 @@ function submitUser(){
     }
 
     const req = new XMLHttpRequest();
-    req.open("POST", "http://localhost:9000/createUser");
+    req.open("POST", "http://35.242.146.95:9000/createUser");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
