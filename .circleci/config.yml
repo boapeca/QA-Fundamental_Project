@@ -20,5 +20,5 @@ jobs:
       
       - run:
           name: Deploy Application
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "cd ~/Fundamental_Project && mvn install"
           
