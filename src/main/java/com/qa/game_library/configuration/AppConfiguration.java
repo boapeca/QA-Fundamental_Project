@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 
 @Configuration
-@EnableWebMvc
 public class AppConfiguration {
 
     @Bean
@@ -16,9 +15,5 @@ public class AppConfiguration {
     }
 
 
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler( "/js/**")
-                .addResourceLocations("classpath:/static/js/");
-    }
 
 }
