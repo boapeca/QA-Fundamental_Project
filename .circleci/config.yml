@@ -16,7 +16,7 @@ jobs:
           command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
       - run:
           name: Clone Repo & Install Maven
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install maven"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install -y maven"
       
       - run:
           name: Deploy Application
