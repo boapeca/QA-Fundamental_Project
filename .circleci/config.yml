@@ -15,13 +15,12 @@ jobs:
           name: Install install java and spring
           command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
       - run:
-          name: Clone Repo & Install Application Dependencies
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
+          name: Clone Repo & Install Maven
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install maven"
+      
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn install "
           
-      - run: mvn dependency:go-offline # gets the project dependencies
- 
-      - run: mvn package 
+      
          
