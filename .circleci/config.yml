@@ -13,7 +13,7 @@ jobs:
       
       - run:
           name: Install install java and spring
-          command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot && sudo apt-get install openjdk-8-jdk 
+          command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
       - run:
           name: Clone Repo & Install Maven
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install -y maven"
