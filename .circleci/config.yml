@@ -9,10 +9,6 @@ jobs:
       - checkout # check out source code to working directory
       - restore_cache: 
           key: Fundamental_Project-{{ checksum "pom.xml" }}
-          
-      - run: mvn dependency:go-offline # gets the project dependencies
- 
-      
      
       
       - run:
@@ -23,5 +19,9 @@ jobs:
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn package "
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project"
+          
+      - run: mvn dependency:go-offline # gets the project dependencies
+ 
+      - run: mvn package 
          
