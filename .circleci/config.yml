@@ -23,5 +23,5 @@ jobs:
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project"
-          
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn run serve"
+         
