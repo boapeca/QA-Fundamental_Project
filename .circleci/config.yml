@@ -22,3 +22,4 @@ jobs:
           name: Deploy Application
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95 "cd ~/Fundamental_Project && mvn install"
           
+
