@@ -23,6 +23,3 @@ jobs:
           command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn install "
           
           
-          
-      
-         
