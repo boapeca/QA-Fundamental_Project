@@ -20,6 +20,6 @@ jobs:
       
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project && mvn install "
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95 "cd ~/Fundamental_Project && mvn install "
           
          
