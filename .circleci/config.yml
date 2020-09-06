@@ -20,7 +20,7 @@ jobs:
           command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
       - run:
           name: Clone Repo & Install Application Dependencies
-          command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/psilva12/Fundamental_Project.git"
+          command: ssh -o StrictHostKeyChecking=no qa@publicip "git clone https://github.com/psilva12/Fundamental_Project.git"
       - run:
           name: Deploy Application
           command: ssh $SSH_USER@$SSH_HOST "cd ~/Fundamental_Project"
