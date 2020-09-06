@@ -9,7 +9,7 @@ function editLibrary(){
 
     const req = new XMLHttpRequest();
     let myId = Number(obj.myLibraryId);
-    req.open("PUT", "http://localhost:8080/updateLibrary/" + myId);
+    req.open("PUT", "http://localhost:9000/updateLibrary/" + myId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -43,7 +43,7 @@ function deleteLibrary(){
     let myId = Number(obj.myLibraryId);
 
     const req = new XMLHttpRequest();
-    req.open("DELETE", "http://localhost:8080/deleteLibrary/" + myId);
+    req.open("DELETE", "http://localhost:9000/deleteLibrary/" + myId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -70,7 +70,7 @@ function editGame(){
 
     const req = new XMLHttpRequest();
     let myId = Number(obj.myGameId);
-    req.open("PUT", "http://localhost:8080/updateGame/" + myId);
+    req.open("PUT", "http://localhost:9000/updateGame/" + myId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -92,7 +92,7 @@ function deleteGame(){
     }
     const req = new XMLHttpRequest();
     let myId = Number(obj.myGameId);
-    req.open("DELETE", "http://localhost:8080/deleteGame/" + myId);
+    req.open("DELETE", "http://localhost:9000/deleteGame/" + myId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -107,7 +107,7 @@ function deleteGame(){
 function deleteGamesInList(gamesID){
     const req = new XMLHttpRequest();
     let myId = Number(gamesID);
-    req.open("DELETE", "http://localhost:8080/deleteGame/" + myId);
+    req.open("DELETE", "http://localhost:9000/deleteGame/" + myId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);

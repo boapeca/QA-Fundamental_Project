@@ -8,7 +8,7 @@ function submitLibrary(){
     }
 
     const req = new XMLHttpRequest();
-    req.open("POST", "http://localhost:8080/createLibrary");
+    req.open("POST", "http://localhost:9000/createLibrary");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -28,7 +28,7 @@ function submitGame(){
         obj[item.name] = item.value;
     }
     const req = new XMLHttpRequest();
-    req.open("POST", "http://localhost:8080/createGame");
+    req.open("POST", "http://localhost:9000/createGame");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server Responded with: " + req.responseText);
@@ -50,10 +50,6 @@ function displayLibraries() {
         if (req.status === 200 && req.readyState === 4) {
             if (req.getResponseHeader("Content-Type") === "application/json") {
                 console.log("oh look its some JSON: " + req.responseText);
-                // adding an element to the body example
-                // let elem = document.createElement('div');
-                // elem.textContent = "hello world";
-                // document.body.appendChild(elem);
 
                 let stuff = JSON.parse(req.response);
                 stuff.forEach(el => {
@@ -82,13 +78,7 @@ function displayLibraries() {
                         newElem.appendChild(name);
                         newElem.appendChild(genre);
                         newElem.appendChild(gameID);
-                        // let button = document.createElement("button");
-                        // button.innerHTML = "Edit";
-                        // newElem.appendChild(button);
-                        // button.value = game.id;
-                        // button.addEventListener('click',function (){
-                        //     getGameEditForm();
-                        // });
+
                         elem.appendChild(newElem);
                     })
                     document.body.appendChild(elem);
@@ -102,6 +92,6 @@ function displayLibraries() {
             console.log("Oh no... handle error");
         }
     };
-    req.open("GET", "http://localhost:8080/getLibraries");
+    req.open("GET", "http://localhost:9000/getLibraries");
     req.send();
 }
