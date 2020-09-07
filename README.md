@@ -13,6 +13,7 @@
 * [Risk Assessment](#Risk-Assessment)
 * [Front-End](#Front-End)
 * [Future Improvements](#Future-Improvements)
+* [Summary](#Summary)
 
 ### Brief
 
@@ -137,4 +138,21 @@ There are a few Future Improvement I would like to implement for this applicatio
 * Allow the users to manage their profile more freely, allowing them to follow other users and see their game libraries.
 * Fix and improve the UI
 * Add a Game Suggestion feature where it would generate games for the user to choose to add on their libraries.
+* Fix Continuous Integration
+
+### Summary
+
+Things that went well:
+ * CRUD functionality was achieved
+ * UI is somehow pleasant
+
+Things that didn't go well:
+ * Application deployment wasn't fully successful, html navigation is possible but there is no communication with the js files.
+ * Login feature wasn't possible to complete
+ 
+Improvement for this project:
+ * Set a better MVP, and small milestones.
+ 
+What was learned:
+ * How to create a spring application, and properly structure a project.
 
