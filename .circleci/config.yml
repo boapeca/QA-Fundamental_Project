@@ -29,7 +29,7 @@ jobs:
           
     - run:
           name: Compile
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/QFundamental_Project && mvn -B -DskipTests clean package"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn -B -DskipTests clean package"
   
     - run:
           name: Deploy
