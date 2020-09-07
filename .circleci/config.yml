@@ -29,9 +29,6 @@ jobs:
     - run:
           name: Install Maven
           command: sudo apt install maven -y
-   # - run:
-   #       name: Clone Repo & Install Application Dependencies
-   #       command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/JudithEdh/QA-Fundamental_Project && cd ~/QA-Fundamental_Project"
 
     - run:
           name: Clone Repo & Install Maven
@@ -44,7 +41,6 @@ jobs:
     - run:
           name: Deploy
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
-          no_output_timeout: 60m
 
 workflows:
   version: 2
