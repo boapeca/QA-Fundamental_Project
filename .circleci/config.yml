@@ -8,6 +8,16 @@ jobs:
   deploy:
     machine:
       enabled: true
+      spring:
+        4h2:
+          console:
+            enabled: true
+            path: /h2
+        datasource:
+          url: jdbc:h2:file:~/gameLibrary
+          username: sa
+          password:
+          driverClassName: org.h2.Driver
     steps:
     - run:
           name: Update apt
