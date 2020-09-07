@@ -1,6 +1,6 @@
-# Fundamental_Project
+# Fundamental Project
 
-# GameLibrary
+# Game Library
 
 
 
