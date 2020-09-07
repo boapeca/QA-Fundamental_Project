@@ -9,7 +9,7 @@ jobs:
     machine:
       enabled: true
       spring:
-        4h2:
+         h2:
           console:
             enabled: true
             path: /h2
@@ -32,15 +32,15 @@ jobs:
 
     - run:
           name: Clone Repo & Install Maven
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95 "git clone https://github.com/psilva12/Fundamental_Project.git"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
 
     - run:
           name: Compile
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95  "cd ~/Fundamental_Project && mvn -B -DskipTests clean package"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn -B -DskipTests clean package"
     
     - run:
           name: Deploy
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@35.242.146.95  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
 
 workflows:
   version: 2
