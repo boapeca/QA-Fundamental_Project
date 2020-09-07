@@ -1,24 +1,49 @@
-jobs: 
-  build: 
-    
-    working_directory: ~/Fundamental_Project
-    docker: 
-      - image: circleci/openjdk:8-jdk-stretch 
-    
-    steps: 
-      - checkout # check out source code to working directory
-      - restore_cache: 
-          key: Fundamental_Project-{{ checksum "pom.xml" }}
-     
-      
-      - run:
-          name: Install install java and spring
-          command: sudo apt-get install unzip && sudo apt-get install zip && curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install springboot
-      - run:
-          name: Clone Repo & Install Maven
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git && sudo apt install -y maven"
-      
-      - run:
-          name: Deploy Application
-          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "cd ~/Fundamental_Project && mvn install"
+version: 2
+jobs:
+  test:
+    machine:
+      enabled: true
+    steps:
+      - run: echo "Tests can run here!"
+  deploy:
+    machine:
+      enabled: true
+    steps:
+    - run:
+          name: Update apt
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt update"
+
+    - run:
+          name: Install JDK
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install openjdk-8-jdk -y"
+    - run:
+          name: Install Maven
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install maven -y"
+   # - run:
+   #       name: Clone Repo & Install Application Dependencies
+   #       command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/JudithEdh/QA-Fundamental_Project && cd ~/QA-Fundamental_Project"
+    - run:
+          name: Update Repo 
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && git pull origin master"
           
+ #   - run:
+  #        name: Stop Java 
+   #       command: ssh $SSH_USER@$SSH_HOST "pkill java"
+
+    - run:
+          name: Compile
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/QFundamental_Project && mvn -B -DskipTests clean package"
+  
+    - run:
+          name: Execute
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
+          no_output_timeout: 60m
+     
+workflows:
+  version: 2
+  test-and-deploy:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
