@@ -107,6 +107,12 @@ Screenshots of the same document can be seen bellow:
 
 ![Risk Assessment pic2](https://github.com/psilva12/Fundamental_Project/blob/master/risk%202.png)
 
+### CI Server
+
+The yaml file is responsible to give Circle Ci instructions to test, build and deploy the application. These are the instructions for this project:
+
+![Ci Server Yaml](https://github.com/psilva12/Fundamental_Project/blob/master/src/main/resources/static/images/CI.png)
+
 ### Front-End
 The Front End pages at this moment are styled to a certain degree, the front end was build mainly in HTML. However the application is stable and functional.
 
