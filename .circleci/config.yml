@@ -5,45 +5,36 @@ jobs:
       enabled: true
     steps:
       - run: echo "Tests can run here!"
-    deploy:
-      machine:
-        enabled: true
-      steps:
-      - run:
-            name: Update apt
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt update"
+  deploy:
+    machine:
+      enabled: true
+    steps:
+    - run:
+          name: Update apt
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt update"
 
-      - run:
-            name: Install JDK
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install openjdk-8-jdk -y"
-      - run:
-            name: Install Maven
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install maven -y"
-     # - run:
-     #       name: Clone Repo & Install Application Dependencies
-     #       command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/JudithEdh/QA-Fundamental_Project && cd ~/QA-Fundamental_Project"
+    - run:
+          name: Install JDK
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install openjdk-8-jdk -y"
+    - run:
+          name: Install Maven
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "sudo apt install maven -y"
+   # - run:
+   #       name: Clone Repo & Install Application Dependencies
+   #       command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/JudithEdh/QA-Fundamental_Project && cd ~/QA-Fundamental_Project"
 
-      - run:
-            name: Clone Repo & Install Maven
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
+    - run:
+          name: Clone Repo & Install Maven
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216 "git clone https://github.com/psilva12/Fundamental_Project.git"
 
-      - run:
-            name: Compile
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn -B -DskipTests clean package"
-      spring:
-      h2:
-        console:
-          enabled: true
-          path: /h2
-      datasource:
-        url: jdbc:h2:file:~/gameLibrary
-        username: sa
-        password:
-        driverClassName: org.h2.Driver
-      - run:
-            name: Deploy
-            command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
-            no_output_timeout: 60m
+    - run:
+          name: Compile
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn -B -DskipTests clean package"
+    
+    - run:
+          name: Deploy
+          command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
+          no_output_timeout: 60m
 
 workflows:
   version: 2
