@@ -40,7 +40,7 @@ jobs:
         username: sa
         password:
         driverClassName: org.h2.Driver
-    - run:
+      - run:
           name: Deploy
           command: ssh -o StrictHostKeyChecking=no palinhesosilva@34.89.8.216  "cd ~/Fundamental_Project && mvn exec:java -Dexec.mainClass=com.qa.game_library.GameLibraryApplication"
           no_output_timeout: 60m
